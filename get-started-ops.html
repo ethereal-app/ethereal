@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Signup Page</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a472a; /* green background */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    width: 100%;
+    background-color: #0b3d26;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .dark-mode-toggle {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .action-buttons a {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    background: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  form {
+    background-color: #0b3d26;
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+  }
+  form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  form input, form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+  }
+  form button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background: rgb(92, 168, 117);
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #drop-zone {
+    margin: 20px 0;
+    text-align: center;
+  }
+  #drop-zone input {
+    margin-top: 10px;
+  }
+  .payments {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    max-width: 400px;
+  }
+  .payments a button {
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .card {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px 0;
+  }
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="images/ethereallogo.jpeg" class="logo" alt="logo">
+  <div class="dark-mode-toggle">
+    <i class="fa fa-bell"></i>
+    <button class="toggle-btn"><i class="fa fa-moon"></i></button>
+  </div>
+</header>
+
+<div class="action-buttons">
+  <a href="#">PROVIDE THE CORRECT DETAILS IN THE FIELD BELOW</a>
+</div>
+
+<form action="https://formspree.io/f/xwpbknre" method="POST">
+  <label for="fullname">FULL NAME</label>
+  <input type="text" name="fullname" id="fullname" placeholder="Full Name" required>
+
+  <label for="username">USERNAME</label>
+  <input type="text" name="username" id="username" placeholder="Username" required>
+
+  <label for="phone">PHONE NUMBER</label>
+  <input type="tel" name="phone" id="phone" placeholder="Phone Number" required>
+
+  <label for="email">E-MAIL</label>
+  <input type="email" name="email" id="email" placeholder="Email" required>
+
+  <label for="country">COUNTRY</label>
+  <select name="country" id="country" required>
+    <option value="">Select Country</option>
+    <option value="Nigeria">Nigeria</option>
+    <option value="Other Countries">Other Countries</option>
+  </select>
+
+  <label for="plans">PLANS</label>
+  <select name="plans" id="plans" required>
+    <option value="">Select package</option>
+    <option value="ETHEREAL-(₦9,000)">ETHEREAL-(₦9,000)</option>
+    <option value="ETHEREAL X-(₦14,000)">ETHEREAL X-(₦14,000)</option>
+  </select>
+
+  <button type="submit">Submit</button>
+</form>
+
+Already signed up? <a href="https://wa.me/2348134513137?text=Hello+Ethereal+Agent+i+have+signedup+for+registration">Login</a>
+<div class="payments">
+  <a href="https://checkout.korapay.com/pay/YLSXtNrVAXR2lUw">
+    <button>Make Payment For ETHEREAL X Package</button>
+  </a>
+  <a href="https://checkout.korapay.com/pay/QfixVIGEMUXxBjx">
+    <button>Make Payment For ETHEREAL Package</button>
+  </a>
+</div>
+
+<div style="margin: 20px 0; font-family: sans-serif;">
+  <label for="fileUpload" style="
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0b520d;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  ">
+    📎 Attach Receipt of Payment
+  </label>
+  <input type="file" id="fileUpload" name="upload" style="display: none;">
+</div>
+
+<div class="card">
+  <img src="images/freebies.jpeg" alt="Freebies">
+</div>
+
+</body>
+</html>
+
+
+

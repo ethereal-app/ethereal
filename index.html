@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ETHEREAL UI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+   
+    body {
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif;
+      background-color: rgba(2, 56, 26, 0.915);
+      color: white;
+    }
+
+    header {
+      background-color: rgba(0, 100, 0, 0.8);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      width: 120px;
+      height: 50px;
+    }
+
+    .notification-btn i {
+      font-size: 20px;
+      color: white;
+    
+    }
+
+    .content {
+      padding: 15px;
+    }
+
+    .header-card {
+      background-image: url('opysn/src/assets/bgg.JPG');
+      background-size: cover;
+      border-radius: 15px;
+      text-align: center;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .logo{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    .profile-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    .action-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+    }
+
+    .action-buttons a {
+      padding: 10px 20px;
+      border: 1px solid white;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    .action-buttons a:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .card {
+      background-color: rgba(2, 56, 26, 0.915);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .card img {
+      width: 100%;
+      display: block;
+    }
+
+    .card-title {
+      padding: 10px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    :root {
+      --bg-color: #020f08;
+      --text-color: white;
+      --accent-color: orange;
+    }
+    body {
+      margin: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      transition: background 0.3s, color 0.3s;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--bg-color);
+      padding: 10px 20px;
+      border-bottom: 1px solid #333;
+    }
+    .logo {
+      height: 50px;
+    }
+    .toggle-btn {
+      background: none;
+      border: none;
+      font-size: 1.4em;
+      color: var(--text-color);
+      cursor: pointer;
+    }
+    .card {
+      background: #09291f;
+      border-radius: 15px;
+      margin: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .card p {
+      padding: 10px 15px;
+      font-size: 15px;
+    }
+    
+    .action-buttons a {
+      background-color:white;
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+    .action-buttons :hover {
+      background-color:  rgba(0, 100, 0, 0.8);
+      color: white;
+    }
+    .tab-bar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #020f08;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      border-top: 1px solid #333;
+    }
+    .tab-bar a {
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .tab-bar i {
+      font-size: 20px;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .tab-bar a.active {
+      color: var(--accent-color);
+    }
+    .dark-mode-toggle {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+  
+
+  </style>
+</head>
+<style type="text/css">
+  .fa-brands fa-tiktok
+  {
+    font-size: large;
+    color: green;
+  }
+ 
+</style>
+<body>
+
+  <header>
+    <img src="C:\Users\USER\Desktop\coding\HTML course\images\ethereallogo.jpeg" class="logo" alt="logo">
+    <div class="dark-mode-toggle">
+      <i class="fa fa-bell"></i>
+      <button class="toggle-btn" id="themeToggle">
+        <i class="fa fa-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  </header>
+
+  <div class="content">
+
+    <div class="header-card">
+      <img src="images/ethereallogo.jpeg" class="profile-img" alt="Profile">
+      <h2><b>ETHEREAL</b></h2>
+      <p>Social Media Monetization</p>
+      <p>WELCOME - <a href="#">Join 1M+ Users</a></p>
+    </div>
+
+    <div class="action-buttons">
+      <a href="opsyn-ui-2.html">Get Started</a>
+      <a href="https://whatsapp.com/channel/0029Vaqzr6eCcW4r7fxe5A3i">Learn More</a>
+    </div>
+
+    <button class="card">
+     
+      <div class="action-buttons" style="justify-content: center; margin-top: 10px;ma">
+        <a href="get-started-ops.html">Register Now</a>
+      </div>
+ <div class="card-title">
+        <strong> Be the first to experience the future of connectivity and innovation</strong>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/welcome.jpeg" alt="">
+      <div class="card-title">
+      <bold><strong><p>Transform your presence online into making money through ETHEREAL</p></strong></bold>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/socialmedia.jpeg" alt="">
+      <div class="card-title">
+        <strong><p>You have already taken the first step into wealth creation by having chatGtp and any social media accounts </p></strong>
+      </div>
+    </div>
+    <div class="card">
+      <img src="C:\Users\USER\Desktop\coding\HTML course\images\earnweekly.jpeg" alt="">
+      <div class="card-title">
+      </div>
+      </div>
+    <div class="card">
+      <img src="images/madeeay.jpeg" alt="">
+      <div class="card-title">
+      </div>
+      </div>
+     <head>
+  <link rel="stylesheet" type="text/css" href="ethereal.css">
+</head>
+<body>
+  <div class="slideshow-container">
+    <img class="mySlides" src="images/readimbnovels.jpeg">
+    <img class="mySlides" src="images/you.jpeg">
+    <img class="mySlides" src="images/youetime.jpeg">
+    <img class="mySlides" src="images/youetime.jpeg">
+    <img class="mySlides" src="images/readimbnovels.jpeg">
+  </div>
+</body>
+    <div class="card"><img src="opysn/src/assets/WhatsApp Image 2025-04-02 at 14.52.16.jpeg" alt=""></div>
+    <div class="card"><img src="opysn/src/assets/WhatsApp Image 2025-04-02 at 14.52.23 (1).jpeg" alt=""></div>
+    <div class="card"><img src="opysn/src/assets/WhatsApp Image 2025-04-02 at 14.52.19.jpeg" alt=""></div>
+    </div>
+
+    <div class="card"><img src="opysn/src/assets/WhatsApp Image 2025-04-02 at 14.52.16.jpeg" alt=""></div>
+    <div class="card"><img src="opysn/src/assets/WhatsApp Image 2025-04-02 at 14.52.23 (1).jpeg" alt=""></div>
+    <div class="card"><img src="opysn/src/assets/WhatsApp Image 2025-04-02 at 14.52.19.jpeg" alt=""></div>
+<head>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css" integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+    <div class="header-card">
+      <h3>Social Links</h3>
+      <div class="social-icons">
+        <a href="https://whatsapp.com/channel/0029Vaqzr6eCcW4r7fxe5A3i"><body>
+         <i class="fa-brands fa-whatsapp"></i>
+        </body>
+        <a href="https://www.instagram.com/etherealofficial2025"><body>
+          <i class="fa-brands fa-square-instagram"></i>
+        </body>
+        <a href="https://t.me/fmmoviefiles2"><body>
+<i class="fa-brands fa-telegram"></i>
+        </body>
+        <a href="https://youtube.com/@wealthcreationarena25?si=Hi2OBh51rvlD9YN7"><body>
+          <i class="fa-brands fa-youtube"></i>
+        </body>
+        <a href="https://www.tiktok.com/@opsynofficial2025?_t=ZM-8vHd5L3ORrq&_r=1"><body>
+          <i class="fa-brands fa-tiktok"></i>
+        </body>
+      </div>
+    </div>
+
+   
+      <p>All rights reserved @Ethreal2025</p><br>
+    </div>
+    <nav class="tab-bar">
+      <a href="index.html"  class="active"><i class="fa fa-home"></i>Home</a>
+      <a href="opsyn-ui-2.html"><i class="fa fa-star"></i>Features</a>
+      <a href="opsyn-ui-3.html"><i class="fa fa-coins"></i>Earnings</a>
+    </nav>
+  
+
+</body>
+</html>

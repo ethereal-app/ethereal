@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OPSYN UI - HTML</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --bg-color: #020f08;
+      --text-color: white;
+      --accent-color: orange;
+    }
+    body {
+      margin: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      transition: background 0.3s, color 0.3s;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--bg-color);
+      padding: 10px 20px;
+      border-bottom: 1px solid #333;
+    }
+    .logo {
+      height: 50px;
+    }
+     
+    .logo{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+    .toggle-btn {
+      background: none;
+      border: none;
+      font-size: 1.4em;
+      color: var(--text-color);
+      cursor: pointer;
+    }
+    .card {
+      background: #09291f;
+      border-radius: 15px;
+      margin: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .card p {
+      padding: 10px 15px;
+      font-size: 15px;
+    }
+    .action-buttons {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px;
+    }
+    .action-buttons a {
+      background-color: white;
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+    .action-buttons :hover{
+       background-color: rgba(0, 100, 0, 0.8) ;
+       color: white;
+    }
+
+    .tab-bar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #020f08;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      border-top: 1px solid #333;
+    }
+    .tab-bar a {
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .tab-bar i {
+      font-size: 20px;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .tab-bar a.active {
+      color: var(--accent-color);
+    }
+    .dark-mode-toggle {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <img src="images/ethereallogo.jpeg" alt="Logo" class="logo" />
+    <div class="dark-mode-toggle">
+      <i class="fa fa-bell"></i>
+      <button class="toggle-btn" id="themeToggle">
+        <i class="fa fa-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="card">
+      <img src="images/secondlogo.jpeg" alt="Experience" />
+      <div class="action-buttons">
+        <a href="https://t.me/+ycsTF4VjbXAzYWE0">Learn More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/ethrealCAC.jpeg" alt="Opsyn" />
+    </div>
+
+    <div class="card">
+      <img src="images/freedata.jpeg" alt="INSTANT DATA BONUS AFTER REGISTRATION"/>
+      <strong>INSTANT DATA BONUS AFTER REGISTRATION</strong>
+<p>Upon Registration, If a user is lucky to be part of the selected daily receiver of part of the Data shares for the day, Such user will automatically receive Data bonus on the number they have used to Enroll on Ethereal during registration.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/reading.jpeg" />
+      <strong>EARN PER NUMBER OF ENGAGED WORDS & ARTICLES ON ETHEREAL</strong>
+
+<p>Ethereal Feature allows users to Earn per Word they Engage on Ethereal Articles or Blog. The more you scroll, the more you earn. 
+Fun part is that, Ethereal AI can simple do these for you, so you Earn without stress</p>
+    </div>
+
+    <div class="card">
+      <img src="images/paidview.jpeg" />
+      <strong>WRITE ARTICLES/BLOGS AND GET PAID WITH ETHEREAL</strong>
+
+<p>This is an innovative feature on Ethereal that Rewards Creativity. Topics on different articles would be provided while the best writers and editors get paid up to $25 per each article written.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/ethrealXAi.jpeg" />
+      <strong>EARN WITH ETHREAL AI</strong><p>On Ethereal, You are provided your own personal AI which helps you claim your reward & Daily revenue you have activated. Ethereal pays you $2.5 per every 10 words you read and $1 for every link you click.  Imagine you activating your personal AI 🤖  that helps you do all these and more daily?</p>
+    </div>
+
+    <div class="card">
+      <img src="images/games.jpeg" />
+      <strong>ETHEREAL GAME FEATURES</strong>
+
+<p>Ethereal has allowed users to get paid from their passions & Ecstasies, Your social addictions are no longer a problem with Ethereal features. Earn up to $20 just by playing your known favorite Games, The more you play, the more you Earn!</p>
+    </div>
+
+    <div class="card">
+      <img src="images/elevate.jpeg" />
+      <strong>ETHEREAL SOCIAL BOOSTS</strong>
+
+<p>As an Ethereal user, you are Entitled to elevate your social & brand presence, You can gain brand recognition by just using an allocated potion of your earnings to purchase  real followers & engagements which would be done by Ethereal users.  You also get free brand recognition and patronage from Our users as they will notice what you do.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/boost.jpeg" />
+      <strong>EARN FROM YOUR SOCIAL ENGAGEMENTS</strong>
+
+<p>This the second part of the “Ethereal Social Boost”
+feature that rewards  Ethereal Users that Engage on social links from other users. Ethereal user will receive link offers of up to 5 or more daily, Which can Earn them Extra revenue rewards for engaging on Links.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/elysian.jpeg" />
+      <strong>ELYSIAN TRADE SECTOR ON ETHEREAL</strong>
+
+<p>Ethereal rewards Entrepreneur, a business owner and a skilled user. Elysian trade sector on Ethereal is where you can easily surpass your daily sales targets!
+
+As a user, You are eligible to upload your goods, skills & services to our marketplace, Which is being visited by thousands of ethereal users. You will gain thousands of buyers and patronages, all these comes for FREE</p>
+    </div>
+
+    <div class="card">
+      <img src="images/generateandsell.jpeg" />
+      <strong>SELL PRODUCTS TO FOREIGN COMPANIES WITH ETHEREAL</strong><p>ETHEREAL gives you access to sell your products to Foriegn Companies and get paid in Dollars</p>
+    </div>
+    <div class="card">
+      <img src="images/snapchat.jpeg" />
+      <strong>GET PAID WITH YOUR SNAPCHAT ACCOUNT</strong>
+
+<p>Ethereal has brought features where users can Get real cash rewards from doing what they already do. Snapchat streak feature on Ethereal is a way you can earn unlimitedly just by streaking ethereal contents. All you need to do is to connect your Snapchat account to your Ethereal account.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/tiktok.jpeg" />
+      <strong>TURN YOUR TIKTOK IMPACT INTO CASHFLOW</strong>
+
+<p>This is an Ethereal Feature that allows users to creatively get paid from tiktok per every upload they make with our Tiktok sound. A sound either created by Ethereal or a user
+~Get paid $50 for every sound you make for ethereal, 
+~Earn up to $5 for uploading with any Ethereal tiktok sound. 
+~Earn up to $5 per every post made with your Ethereal tiktok sound.</p>
+    </div>
+     <div class="card">
+      <img src="images/dualflow.jpeg" />
+      <strong>DUAL FLOW REWARD SYSTEM ON ETHEREAL</strong>
+
+<p>Dual flow reward system is a unique invention on Ethereal, where users are allocated a portion and share of every revenue generated within their network and by their superior.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/SIGNUP.jpeg" />
+    </div>
+    <div class="action-buttons">
+      <a href="opsyn-ui-3.html">Get Started</a>
+      <a href="https://whatsapp.com/channel/0029Vaqzr6eCcW4r7fxe5A3i">Learn More</a>
+    </div>
+
+    <div class="action-buttons">
+      <a href="https://t.me/SAMWELLMEDIA?text=Hello+Opsyn+Agent+im+ready+to+enroll+for+OPSYN+registration">Telegram</a>
+      <a href="https://wa.me/2348134513137?text=Hello+Opsyn+Agent+i’m+ready+to+enroll+for+OPSYN+registration">WhatsApp</a>
+    </div>
+    
+  </main>
+
+  <nav class="tab-bar">
+    <a href="index.html"><i class="fa fa-home"></i>Home</a>
+    <a href="opsyn-ui-2.html" class="active"><i class="fa fa-star"></i>Features</a>
+    <a href="opsyn-ui-3.html"><i class="fa fa-coins"></i>Earnings</a>
+  </nav>
+
+  <script>
+    const toggleBtn = document.getElementById('themeToggle');
+    let isDark = true;
+    toggleBtn.addEventListener('click', () => {
+      isDark = !isDark;
+      document.body.style.backgroundColor = isDark ? '#020f08' : '#f0f0f0';
+      document.body.style.color = isDark ? 'white' : '#111';
+      toggleBtn.innerHTML = isDark
+        ? '<i class="fa fa-moon"></i>'
+        : '<i class="fa fa-sun"></i>';
+    });
+  </script>
+  </script>
+</body>
+</html>
